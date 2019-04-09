@@ -1,0 +1,341 @@
+17:17:03.157 [main] INFO  com.beyondsoft.itsm.ItsmApplication --- Starting ItsmApplication on DESKTOP-5B7O4K0 with PID 10316 (C:\springcloud-workspace\itsm\target\classes started by jeff in C:\springcloud-workspace\itsm)
+17:17:03.163 [main] INFO  com.beyondsoft.itsm.ItsmApplication --- The following profiles are active: dev
+17:17:03.373 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext --- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@73700b80: startup date [Wed Apr 03 17:17:03 CST 2019]; root of context hierarchy
+17:17:03.594 [background-preinit] INFO  o.h.validator.internal.util.Version --- HV000001: Hibernate Validator 5.2.5.Final
+17:17:06.226 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory --- Overriding bean definition for bean 'userRespository' with a different definition: replacing [Generic bean: class [org.mybatis.spring.mapper.MapperFactoryBean]; scope=singleton; abstract=false; lazyInit=false; autowireMode=2; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\springcloud-workspace\itsm\target\classes\com\beyondsoft\itsm\modules\user\dao\UserRespository.class]] with [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+17:17:08.313 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer --- Tomcat initialized with port(s): 9001 (http)
+17:17:08.334 [main] INFO  o.a.catalina.core.StandardService --- Starting service [Tomcat]
+17:17:08.336 [main] INFO  o.a.catalina.core.StandardEngine --- Starting Servlet Engine: Apache Tomcat/8.5.15
+17:17:08.964 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner --- At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17:17:08.974 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] --- Initializing Spring embedded WebApplicationContext
+17:17:08.975 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader --- Root WebApplicationContext: initialization completed in 5603 ms
+17:17:09.700 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean --- Mapping servlet: 'dispatcherServlet' to [/]
+17:17:09.708 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean --- Mapping filter: 'characterEncodingFilter' to: [/*]
+17:17:09.710 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean --- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+17:17:09.710 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean --- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+17:17:09.711 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean --- Mapping filter: 'requestContextFilter' to: [/*]
+17:17:10.555 [main] INFO  c.alibaba.druid.pool.DruidDataSource --- {dataSource-1} inited
+17:17:10.666 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils --- Executing SQL script from URL [file:/C:/springcloud-workspace/itsm/target/classes/schema.sql]
+17:17:10.687 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils --- Executed SQL script from URL [file:/C:/springcloud-workspace/itsm/target/classes/schema.sql] in 20 ms.
+17:17:10.691 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils --- Executing SQL script from URL [file:/C:/springcloud-workspace/itsm/target/classes/data.sql]
+17:17:10.695 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils --- Executed SQL script from URL [file:/C:/springcloud-workspace/itsm/target/classes/data.sql] in 3 ms.
+17:17:10.849 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean --- Building JPA container EntityManagerFactory for persistence unit 'default'
+17:17:11.063 [main] INFO  o.h.jpa.internal.util.LogHelper --- HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+17:17:11.194 [main] INFO  org.hibernate.Version --- HHH000412: Hibernate Core {5.0.12.Final}
+17:17:11.197 [main] INFO  org.hibernate.cfg.Environment --- HHH000206: hibernate.properties not found
+17:17:11.200 [main] INFO  org.hibernate.cfg.Environment --- HHH000021: Bytecode provider name : javassist
+17:17:11.296 [main] INFO  o.h.annotations.common.Version --- HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+17:17:11.701 [main] INFO  org.hibernate.dialect.Dialect --- HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+17:17:12.552 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean --- Initialized JPA EntityManagerFactory for persistence unit 'default'
+17:17:13.935 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter --- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@73700b80: startup date [Wed Apr 03 17:17:03 CST 2019]; root of context hierarchy
+17:17:14.086 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping --- Mapped "{[/user/list],methods=[GET]}" onto public com.beyondsoft.itsm.core.BaseOutDto<java.util.List<com.beyondsoft.itsm.modules.user.domain.User>> com.beyondsoft.itsm.modules.user.controller.UserController.list()
+17:17:14.088 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping --- Mapped "{[/user/save],methods=[GET]}" onto public com.beyondsoft.itsm.core.BaseOutDto com.beyondsoft.itsm.modules.user.controller.UserController.save(com.beyondsoft.itsm.modules.user.domain.User)
+17:17:14.090 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping --- Mapped "{[/user/{userId}],methods=[GET]}" onto public com.beyondsoft.itsm.modules.user.domain.User com.beyondsoft.itsm.modules.user.controller.UserController.findById(java.lang.Integer)
+17:17:14.090 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping --- Mapped "{[/user/userftlList],methods=[GET]}" onto public java.lang.String com.beyondsoft.itsm.modules.user.controller.UserController.ftlList(org.springframework.ui.ModelMap)
+17:17:14.091 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping --- Mapped "{[/user/userJspList],methods=[GET]}" onto public java.lang.String com.beyondsoft.itsm.modules.user.controller.UserController.jspList(org.springframework.ui.ModelMap)
+17:17:14.095 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping --- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+17:17:14.096 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping --- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+17:17:14.122 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping --- Mapped URL path [/index1] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+17:17:14.146 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping --- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:17:14.146 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping --- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:17:14.181 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver --- Detected @ExceptionHandler methods in globalExceptionAdvice
+17:17:14.221 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping --- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:17:14.298 [main] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping --- Adding welcome page: class path resource [static/index.html]
+17:17:14.585 [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer --- ClassTemplateLoader for Spring macros added to FreeMarker configuration
+17:17:14.814 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter --- Registering beans for JMX exposure on startup
+17:17:14.816 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter --- Bean with name 'duridDataSource' has been autodetected for JMX exposure
+17:17:14.824 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter --- Located MBean 'duridDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=duridDataSource,type=DruidDataSource]
+17:17:14.848 [main] INFO  o.a.coyote.http11.Http11NioProtocol --- Initializing ProtocolHandler ["http-nio-9001"]
+17:17:14.876 [main] INFO  o.a.coyote.http11.Http11NioProtocol --- Starting ProtocolHandler ["http-nio-9001"]
+17:17:14.901 [main] INFO  o.a.tomcat.util.net.NioSelectorPool --- Using a shared selector for servlet write/read
+17:17:14.968 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer --- Tomcat started on port(s): 9001 (http)
+17:17:14.977 [main] INFO  com.beyondsoft.itsm.ItsmApplication --- Started ItsmApplication in 12.606 seconds (JVM running for 13.777)
+17:17:36.513 [http-nio-9001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] --- Initializing Spring FrameworkServlet 'dispatcherServlet'
+17:17:36.514 [http-nio-9001-exec-1] INFO  o.s.web.servlet.DispatcherServlet --- FrameworkServlet 'dispatcherServlet': initialization started
+17:17:36.546 [http-nio-9001-exec-1] INFO  o.s.web.servlet.DispatcherServlet --- FrameworkServlet 'dispatcherServlet': initialization completed in 32 ms
+17:17:36.721 [http-nio-9001-exec-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator --- HHH000397: Using ASTQueryTranslatorFactory
+17:27:18.175 [main] INFO  com.beyondsoft.itsm.ItsmApplication --- Starting ItsmApplication on DESKTOP-5B7O4K0 with PID 2372 (C:\springcloud-workspace\itsm\target\classes started by jeff in C:\springcloud-workspace\itsm)
+17:27:18.206 [main] INFO  com.beyondsoft.itsm.ItsmApplication --- The following profiles are active: dev
+17:27:18.281 [background-preinit] INFO  o.h.validator.internal.util.Version --- HV000001: Hibernate Validator 5.2.5.Final
+17:27:18.588 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext --- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@bff34c6: startup date [Wed Apr 03 17:27:18 CST 2019]; root of context hierarchy
+17:27:22.619 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory --- Overriding bean definition for bean 'userRespository' with a different definition: replacing [Generic bean: class [org.mybatis.spring.mapper.MapperFactoryBean]; scope=singleton; abstract=false; lazyInit=false; autowireMode=2; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\springcloud-workspace\itsm\target\classes\com\beyondsoft\itsm\modules\user\dao\UserRespository.class]] with [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+17:27:27.238 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer --- Tomcat initialized with port(s): 9001 (http)
+17:27:27.288 [main] INFO  o.a.catalina.core.StandardService --- Starting service [Tomcat]
+17:27:27.291 [main] INFO  o.a.catalina.core.StandardEngine --- Starting Servlet Engine: Apache Tomcat/8.5.15
+17:27:27.953 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner --- At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17:27:27.963 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] --- Initializing Spring embedded WebApplicationContext
+17:27:27.964 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader --- Root WebApplicationContext: initialization completed in 9376 ms
+17:27:28.376 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean --- Mapping servlet: 'dispatcherServlet' to [/]
+17:27:28.390 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean --- Mapping filter: 'characterEncodingFilter' to: [/*]
+17:27:28.391 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean --- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+17:27:28.392 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean --- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+17:27:28.393 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean --- Mapping filter: 'requestContextFilter' to: [/*]
+17:27:29.667 [main] INFO  c.alibaba.druid.pool.DruidDataSource --- {dataSource-1} inited
+17:27:30.215 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils --- Executing SQL script from URL [file:/C:/springcloud-workspace/itsm/target/classes/schema.sql]
+17:27:30.285 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils --- Executed SQL script from URL [file:/C:/springcloud-workspace/itsm/target/classes/schema.sql] in 69 ms.
+17:27:30.291 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils --- Executing SQL script from URL [file:/C:/springcloud-workspace/itsm/target/classes/data.sql]
+17:27:30.295 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils --- Executed SQL script from URL [file:/C:/springcloud-workspace/itsm/target/classes/data.sql] in 3 ms.
+17:27:30.904 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean --- Building JPA container EntityManagerFactory for persistence unit 'default'
+17:27:30.980 [main] INFO  o.h.jpa.internal.util.LogHelper --- HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+17:27:31.373 [main] INFO  org.hibernate.Version --- HHH000412: Hibernate Core {5.0.12.Final}
+17:27:31.377 [main] INFO  org.hibernate.cfg.Environment --- HHH000206: hibernate.properties not found
+17:27:31.381 [main] INFO  org.hibernate.cfg.Environment --- HHH000021: Bytecode provider name : javassist
+17:27:31.544 [main] INFO  o.h.annotations.common.Version --- HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+17:27:32.593 [main] INFO  org.hibernate.dialect.Dialect --- HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+17:27:34.434 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean --- Initialized JPA EntityManagerFactory for persistence unit 'default'
+17:27:36.450 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter --- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@bff34c6: startup date [Wed Apr 03 17:27:18 CST 2019]; root of context hierarchy
+17:27:36.764 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping --- Mapped "{[/user/list],methods=[GET]}" onto public com.beyondsoft.itsm.core.BaseOutDto<java.util.List<com.beyondsoft.itsm.modules.user.domain.User>> com.beyondsoft.itsm.modules.user.controller.UserController.list()
+17:27:36.770 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping --- Mapped "{[/user/save],methods=[GET]}" onto public com.beyondsoft.itsm.core.BaseOutDto com.beyondsoft.itsm.modules.user.controller.UserController.save(com.beyondsoft.itsm.modules.user.domain.User)
+17:27:36.770 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping --- Mapped "{[/user/{userId}],methods=[GET]}" onto public com.beyondsoft.itsm.modules.user.domain.User com.beyondsoft.itsm.modules.user.controller.UserController.findById(java.lang.Integer)
+17:27:36.771 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping --- Mapped "{[/user/userJspList],methods=[GET]}" onto public java.lang.String com.beyondsoft.itsm.modules.user.controller.UserController.jspList(org.springframework.ui.ModelMap)
+17:27:36.771 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping --- Mapped "{[/user/userftlList],methods=[GET]}" onto public java.lang.String com.beyondsoft.itsm.modules.user.controller.UserController.ftlList(org.springframework.ui.ModelMap)
+17:27:36.783 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping --- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+17:27:36.785 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping --- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+17:27:36.859 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping --- Mapped URL path [/index1] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+17:27:36.896 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping --- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:27:36.897 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping --- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:27:36.956 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver --- Detected @ExceptionHandler methods in globalExceptionAdvice
+17:27:37.030 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping --- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:27:37.162 [main] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping --- Adding welcome page: class path resource [static/index.html]
+17:27:37.707 [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer --- ClassTemplateLoader for Spring macros added to FreeMarker configuration
+17:27:38.302 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter --- Registering beans for JMX exposure on startup
+17:27:38.305 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter --- Bean with name 'duridDataSource' has been autodetected for JMX exposure
+17:27:38.317 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter --- Located MBean 'duridDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=duridDataSource,type=DruidDataSource]
+17:27:38.344 [main] INFO  o.a.coyote.http11.Http11NioProtocol --- Initializing ProtocolHandler ["http-nio-9001"]
+17:27:38.468 [main] INFO  o.a.coyote.http11.Http11NioProtocol --- Starting ProtocolHandler ["http-nio-9001"]
+17:27:38.532 [main] INFO  o.a.tomcat.util.net.NioSelectorPool --- Using a shared selector for servlet write/read
+17:27:38.675 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer --- Tomcat started on port(s): 9001 (http)
+17:27:38.685 [main] INFO  com.beyondsoft.itsm.ItsmApplication --- Started ItsmApplication in 23.616 seconds (JVM running for 27.827)
+17:27:47.325 [http-nio-9001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] --- Initializing Spring FrameworkServlet 'dispatcherServlet'
+17:27:47.326 [http-nio-9001-exec-1] INFO  o.s.web.servlet.DispatcherServlet --- FrameworkServlet 'dispatcherServlet': initialization started
+17:27:47.371 [http-nio-9001-exec-1] INFO  o.s.web.servlet.DispatcherServlet --- FrameworkServlet 'dispatcherServlet': initialization completed in 45 ms
+17:27:48.945 [http-nio-9001-exec-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator --- HHH000397: Using ASTQueryTranslatorFactory
+17:27:53.537 [http-nio-9001-exec-4] INFO  c.b.i.m.u.controller.UserController --- ---info----
+17:28:04.432 [http-nio-9001-exec-7] INFO  c.b.i.m.u.controller.UserController --- ---info----
+17:28:26.172 [main] INFO  com.beyondsoft.itsm.ItsmApplication --- Starting ItsmApplication on DESKTOP-5B7O4K0 with PID 4656 (C:\springcloud-workspace\itsm\target\classes started by jeff in C:\springcloud-workspace\itsm)
+17:28:26.184 [main] INFO  com.beyondsoft.itsm.ItsmApplication --- The following profiles are active: dev
+17:28:26.336 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext --- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@49c7b90e: startup date [Wed Apr 03 17:28:26 CST 2019]; root of context hierarchy
+17:28:26.636 [background-preinit] INFO  o.h.validator.internal.util.Version --- HV000001: Hibernate Validator 5.2.5.Final
+17:28:29.660 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory --- Overriding bean definition for bean 'userRespository' with a different definition: replacing [Generic bean: class [org.mybatis.spring.mapper.MapperFactoryBean]; scope=singleton; abstract=false; lazyInit=false; autowireMode=2; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\springcloud-workspace\itsm\target\classes\com\beyondsoft\itsm\modules\user\dao\UserRespository.class]] with [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+17:28:32.055 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer --- Tomcat initialized with port(s): 9001 (http)
+17:28:32.082 [main] INFO  o.a.catalina.core.StandardService --- Starting service [Tomcat]
+17:28:32.084 [main] INFO  o.a.catalina.core.StandardEngine --- Starting Servlet Engine: Apache Tomcat/8.5.15
+17:28:32.667 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner --- At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17:28:32.675 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] --- Initializing Spring embedded WebApplicationContext
+17:28:32.676 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader --- Root WebApplicationContext: initialization completed in 6340 ms
+17:28:33.008 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean --- Mapping servlet: 'dispatcherServlet' to [/]
+17:28:33.017 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean --- Mapping filter: 'characterEncodingFilter' to: [/*]
+17:28:33.018 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean --- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+17:28:33.019 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean --- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+17:28:33.020 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean --- Mapping filter: 'requestContextFilter' to: [/*]
+17:28:34.002 [main] INFO  c.alibaba.druid.pool.DruidDataSource --- {dataSource-1} inited
+17:28:34.241 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils --- Executing SQL script from URL [file:/C:/springcloud-workspace/itsm/target/classes/schema.sql]
+17:28:34.282 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils --- Executed SQL script from URL [file:/C:/springcloud-workspace/itsm/target/classes/schema.sql] in 40 ms.
+17:28:34.287 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils --- Executing SQL script from URL [file:/C:/springcloud-workspace/itsm/target/classes/data.sql]
+17:28:34.308 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils --- Executed SQL script from URL [file:/C:/springcloud-workspace/itsm/target/classes/data.sql] in 20 ms.
+17:28:34.689 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean --- Building JPA container EntityManagerFactory for persistence unit 'default'
+17:28:34.970 [main] INFO  o.h.jpa.internal.util.LogHelper --- HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+17:28:35.269 [main] INFO  org.hibernate.Version --- HHH000412: Hibernate Core {5.0.12.Final}
+17:28:35.272 [main] INFO  org.hibernate.cfg.Environment --- HHH000206: hibernate.properties not found
+17:28:35.277 [main] INFO  org.hibernate.cfg.Environment --- HHH000021: Bytecode provider name : javassist
+17:28:35.368 [main] INFO  o.h.annotations.common.Version --- HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+17:28:35.804 [main] INFO  org.hibernate.dialect.Dialect --- HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+17:28:36.954 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean --- Initialized JPA EntityManagerFactory for persistence unit 'default'
+17:28:38.364 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter --- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@49c7b90e: startup date [Wed Apr 03 17:28:26 CST 2019]; root of context hierarchy
+17:28:38.518 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping --- Mapped "{[/user/list],methods=[GET]}" onto public com.beyondsoft.itsm.core.BaseOutDto<java.util.List<com.beyondsoft.itsm.modules.user.domain.User>> com.beyondsoft.itsm.modules.user.controller.UserController.list()
+17:28:38.520 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping --- Mapped "{[/user/save],methods=[GET]}" onto public com.beyondsoft.itsm.core.BaseOutDto com.beyondsoft.itsm.modules.user.controller.UserController.save(com.beyondsoft.itsm.modules.user.domain.User)
+17:28:38.521 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping --- Mapped "{[/user/userJspList],methods=[GET]}" onto public java.lang.String com.beyondsoft.itsm.modules.user.controller.UserController.jspList(org.springframework.ui.ModelMap)
+17:28:38.522 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping --- Mapped "{[/user/{userId}],methods=[GET]}" onto public com.beyondsoft.itsm.modules.user.domain.User com.beyondsoft.itsm.modules.user.controller.UserController.findById(java.lang.Integer)
+17:28:38.522 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping --- Mapped "{[/user/userftlList],methods=[GET]}" onto public java.lang.String com.beyondsoft.itsm.modules.user.controller.UserController.ftlList(org.springframework.ui.ModelMap)
+17:28:38.529 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping --- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+17:28:38.530 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping --- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+17:28:38.551 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping --- Mapped URL path [/index1] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+17:28:38.570 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping --- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:28:38.571 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping --- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:28:38.603 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver --- Detected @ExceptionHandler methods in globalExceptionAdvice
+17:28:38.648 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping --- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:28:38.729 [main] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping --- Adding welcome page: class path resource [static/index.html]
+17:28:39.045 [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer --- ClassTemplateLoader for Spring macros added to FreeMarker configuration
+17:28:39.258 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter --- Registering beans for JMX exposure on startup
+17:28:39.260 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter --- Bean with name 'duridDataSource' has been autodetected for JMX exposure
+17:28:39.279 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter --- Located MBean 'duridDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=duridDataSource,type=DruidDataSource]
+17:28:39.304 [main] INFO  o.a.coyote.http11.Http11NioProtocol --- Initializing ProtocolHandler ["http-nio-9001"]
+17:28:39.334 [main] INFO  o.a.coyote.http11.Http11NioProtocol --- Starting ProtocolHandler ["http-nio-9001"]
+17:28:39.362 [main] INFO  o.a.tomcat.util.net.NioSelectorPool --- Using a shared selector for servlet write/read
+17:28:39.446 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer --- Tomcat started on port(s): 9001 (http)
+17:28:39.457 [main] INFO  com.beyondsoft.itsm.ItsmApplication --- Started ItsmApplication in 14.341 seconds (JVM running for 16.287)
+17:29:29.530 [http-nio-9001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] --- Initializing Spring FrameworkServlet 'dispatcherServlet'
+17:29:29.531 [http-nio-9001-exec-1] INFO  o.s.web.servlet.DispatcherServlet --- FrameworkServlet 'dispatcherServlet': initialization started
+17:29:29.563 [http-nio-9001-exec-1] INFO  o.s.web.servlet.DispatcherServlet --- FrameworkServlet 'dispatcherServlet': initialization completed in 32 ms
+17:29:29.627 [http-nio-9001-exec-1] INFO  c.b.i.m.u.controller.UserController --- ---info----
+17:39:39.814 [main] INFO  com.beyondsoft.itsm.ItsmApplication --- Starting ItsmApplication on DESKTOP-5B7O4K0 with PID 6664 (C:\springcloud-workspace\itsm\target\classes started by jeff in C:\springcloud-workspace\itsm)
+17:39:39.818 [main] INFO  com.beyondsoft.itsm.ItsmApplication --- The following profiles are active: dev
+17:39:39.995 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext --- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@49c7b90e: startup date [Wed Apr 03 17:39:39 CST 2019]; root of context hierarchy
+17:39:40.202 [background-preinit] INFO  o.h.validator.internal.util.Version --- HV000001: Hibernate Validator 5.2.5.Final
+17:39:43.252 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory --- Overriding bean definition for bean 'userRespository' with a different definition: replacing [Generic bean: class [org.mybatis.spring.mapper.MapperFactoryBean]; scope=singleton; abstract=false; lazyInit=false; autowireMode=2; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\springcloud-workspace\itsm\target\classes\com\beyondsoft\itsm\modules\user\dao\UserRespository.class]] with [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+17:39:47.132 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer --- Tomcat initialized with port(s): 9001 (http)
+17:39:47.277 [main] INFO  o.a.catalina.core.StandardService --- Starting service [Tomcat]
+17:39:47.296 [main] INFO  o.a.catalina.core.StandardEngine --- Starting Servlet Engine: Apache Tomcat/8.5.15
+17:39:49.667 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner --- At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17:39:49.691 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] --- Initializing Spring embedded WebApplicationContext
+17:39:49.692 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader --- Root WebApplicationContext: initialization completed in 9697 ms
+17:39:50.390 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean --- Mapping servlet: 'dispatcherServlet' to [/]
+17:39:50.401 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean --- Mapping filter: 'characterEncodingFilter' to: [/*]
+17:39:50.402 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean --- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+17:39:50.403 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean --- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+17:39:50.403 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean --- Mapping filter: 'requestContextFilter' to: [/*]
+17:39:51.371 [main] INFO  c.alibaba.druid.pool.DruidDataSource --- {dataSource-1} inited
+17:39:51.596 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils --- Executing SQL script from URL [file:/C:/springcloud-workspace/itsm/target/classes/schema.sql]
+17:39:51.647 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils --- Executed SQL script from URL [file:/C:/springcloud-workspace/itsm/target/classes/schema.sql] in 51 ms.
+17:39:51.658 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils --- Executing SQL script from URL [file:/C:/springcloud-workspace/itsm/target/classes/data.sql]
+17:39:51.662 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils --- Executed SQL script from URL [file:/C:/springcloud-workspace/itsm/target/classes/data.sql] in 3 ms.
+17:39:52.017 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean --- Building JPA container EntityManagerFactory for persistence unit 'default'
+17:39:52.258 [main] INFO  o.h.jpa.internal.util.LogHelper --- HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+17:39:52.629 [main] INFO  org.hibernate.Version --- HHH000412: Hibernate Core {5.0.12.Final}
+17:39:52.633 [main] INFO  org.hibernate.cfg.Environment --- HHH000206: hibernate.properties not found
+17:39:52.636 [main] INFO  org.hibernate.cfg.Environment --- HHH000021: Bytecode provider name : javassist
+17:39:52.900 [main] INFO  o.h.annotations.common.Version --- HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+17:39:53.570 [main] INFO  org.hibernate.dialect.Dialect --- HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+17:39:54.693 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean --- Initialized JPA EntityManagerFactory for persistence unit 'default'
+17:39:56.070 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter --- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@49c7b90e: startup date [Wed Apr 03 17:39:39 CST 2019]; root of context hierarchy
+17:39:56.217 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping --- Mapped "{[/user/list],methods=[GET]}" onto public com.beyondsoft.itsm.core.BaseOutDto<java.util.List<com.beyondsoft.itsm.modules.user.domain.User>> com.beyondsoft.itsm.modules.user.controller.UserController.list()
+17:39:56.222 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping --- Mapped "{[/user/save],methods=[GET]}" onto public com.beyondsoft.itsm.core.BaseOutDto com.beyondsoft.itsm.modules.user.controller.UserController.save(com.beyondsoft.itsm.modules.user.domain.User)
+17:39:56.224 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping --- Mapped "{[/user/userJspList],methods=[GET]}" onto public java.lang.String com.beyondsoft.itsm.modules.user.controller.UserController.jspList(org.springframework.ui.ModelMap)
+17:39:56.224 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping --- Mapped "{[/user/userftlList],methods=[GET]}" onto public java.lang.String com.beyondsoft.itsm.modules.user.controller.UserController.ftlList(org.springframework.ui.ModelMap)
+17:39:56.225 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping --- Mapped "{[/user/{userId}],methods=[GET]}" onto public com.beyondsoft.itsm.modules.user.domain.User com.beyondsoft.itsm.modules.user.controller.UserController.findById(java.lang.Integer)
+17:39:56.231 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping --- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+17:39:56.232 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping --- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+17:39:56.260 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping --- Mapped URL path [/index1] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+17:39:56.290 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping --- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:39:56.291 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping --- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:39:56.328 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver --- Detected @ExceptionHandler methods in globalExceptionAdvice
+17:39:56.371 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping --- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:39:56.458 [main] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping --- Adding welcome page: class path resource [static/index.html]
+17:39:56.749 [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer --- ClassTemplateLoader for Spring macros added to FreeMarker configuration
+17:39:57.016 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter --- Registering beans for JMX exposure on startup
+17:39:57.019 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter --- Bean with name 'duridDataSource' has been autodetected for JMX exposure
+17:39:57.028 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter --- Located MBean 'duridDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=duridDataSource,type=DruidDataSource]
+17:39:57.047 [main] INFO  o.a.coyote.http11.Http11NioProtocol --- Initializing ProtocolHandler ["http-nio-9001"]
+17:39:57.078 [main] INFO  o.a.coyote.http11.Http11NioProtocol --- Starting ProtocolHandler ["http-nio-9001"]
+17:39:57.108 [main] INFO  o.a.tomcat.util.net.NioSelectorPool --- Using a shared selector for servlet write/read
+17:39:57.169 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer --- Tomcat started on port(s): 9001 (http)
+17:39:57.183 [main] INFO  com.beyondsoft.itsm.ItsmApplication --- Started ItsmApplication in 18.159 seconds (JVM running for 19.131)
+17:39:57.967 [http-nio-9001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] --- Initializing Spring FrameworkServlet 'dispatcherServlet'
+17:39:57.968 [http-nio-9001-exec-1] INFO  o.s.web.servlet.DispatcherServlet --- FrameworkServlet 'dispatcherServlet': initialization started
+17:39:58.003 [http-nio-9001-exec-1] INFO  o.s.web.servlet.DispatcherServlet --- FrameworkServlet 'dispatcherServlet': initialization completed in 35 ms
+17:42:06.910 [main] INFO  com.beyondsoft.itsm.ItsmApplication --- Starting ItsmApplication on DESKTOP-5B7O4K0 with PID 9768 (C:\springcloud-workspace\itsm\target\classes started by jeff in C:\springcloud-workspace\itsm)
+17:42:06.912 [main] INFO  com.beyondsoft.itsm.ItsmApplication --- The following profiles are active: dev
+17:42:07.115 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext --- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@32b260fa: startup date [Wed Apr 03 17:42:07 CST 2019]; root of context hierarchy
+17:42:07.271 [background-preinit] INFO  o.h.validator.internal.util.Version --- HV000001: Hibernate Validator 5.2.5.Final
+17:42:10.291 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory --- Overriding bean definition for bean 'userRespository' with a different definition: replacing [Generic bean: class [org.mybatis.spring.mapper.MapperFactoryBean]; scope=singleton; abstract=false; lazyInit=false; autowireMode=2; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\springcloud-workspace\itsm\target\classes\com\beyondsoft\itsm\modules\user\dao\UserRespository.class]] with [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+17:42:12.568 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer --- Tomcat initialized with port(s): 9001 (http)
+17:42:12.591 [main] INFO  o.a.catalina.core.StandardService --- Starting service [Tomcat]
+17:42:12.594 [main] INFO  o.a.catalina.core.StandardEngine --- Starting Servlet Engine: Apache Tomcat/8.5.15
+17:42:13.136 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner --- At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17:42:13.144 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] --- Initializing Spring embedded WebApplicationContext
+17:42:13.145 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader --- Root WebApplicationContext: initialization completed in 6030 ms
+17:42:13.522 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean --- Mapping servlet: 'dispatcherServlet' to [/]
+17:42:13.534 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean --- Mapping filter: 'characterEncodingFilter' to: [/*]
+17:42:13.535 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean --- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+17:42:13.535 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean --- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+17:42:13.536 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean --- Mapping filter: 'requestContextFilter' to: [/*]
+17:42:14.309 [main] INFO  c.alibaba.druid.pool.DruidDataSource --- {dataSource-1} inited
+17:42:14.448 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils --- Executing SQL script from URL [file:/C:/springcloud-workspace/itsm/target/classes/schema.sql]
+17:42:14.554 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils --- Executed SQL script from URL [file:/C:/springcloud-workspace/itsm/target/classes/schema.sql] in 106 ms.
+17:42:14.561 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils --- Executing SQL script from URL [file:/C:/springcloud-workspace/itsm/target/classes/data.sql]
+17:42:14.582 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils --- Executed SQL script from URL [file:/C:/springcloud-workspace/itsm/target/classes/data.sql] in 21 ms.
+17:42:14.789 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean --- Building JPA container EntityManagerFactory for persistence unit 'default'
+17:42:15.240 [main] INFO  org.hibernate.Version --- HHH000412: Hibernate Core {5.0.12.Final}
+17:42:15.243 [main] INFO  org.hibernate.cfg.Environment --- HHH000206: hibernate.properties not found
+17:42:15.246 [main] INFO  org.hibernate.cfg.Environment --- HHH000021: Bytecode provider name : javassist
+17:42:15.315 [main] INFO  o.h.annotations.common.Version --- HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+17:42:15.596 [main] INFO  org.hibernate.dialect.Dialect --- HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+17:42:16.691 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean --- Initialized JPA EntityManagerFactory for persistence unit 'default'
+17:42:18.429 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter --- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@32b260fa: startup date [Wed Apr 03 17:42:07 CST 2019]; root of context hierarchy
+17:42:18.614 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping --- Mapped "{[/user/list],methods=[GET]}" onto public com.beyondsoft.itsm.core.BaseOutDto<java.util.List<com.beyondsoft.itsm.modules.user.domain.User>> com.beyondsoft.itsm.modules.user.controller.UserController.list()
+17:42:18.616 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping --- Mapped "{[/user/save],methods=[GET]}" onto public com.beyondsoft.itsm.core.BaseOutDto com.beyondsoft.itsm.modules.user.controller.UserController.save(com.beyondsoft.itsm.modules.user.domain.User)
+17:42:18.616 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping --- Mapped "{[/user/userftlList],methods=[GET]}" onto public java.lang.String com.beyondsoft.itsm.modules.user.controller.UserController.ftlList(org.springframework.ui.ModelMap)
+17:42:18.617 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping --- Mapped "{[/user/{userId}],methods=[GET]}" onto public com.beyondsoft.itsm.modules.user.domain.User com.beyondsoft.itsm.modules.user.controller.UserController.findById(java.lang.Integer)
+17:42:18.617 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping --- Mapped "{[/user/userJspList],methods=[GET]}" onto public java.lang.String com.beyondsoft.itsm.modules.user.controller.UserController.jspList(org.springframework.ui.ModelMap)
+17:42:18.628 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping --- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+17:42:18.629 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping --- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+17:42:18.682 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping --- Mapped URL path [/index1] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+17:42:18.767 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping --- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:42:18.767 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping --- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:42:18.825 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver --- Detected @ExceptionHandler methods in globalExceptionAdvice
+17:42:18.916 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping --- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:42:19.045 [main] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping --- Adding welcome page: class path resource [static/index.html]
+17:42:19.417 [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer --- ClassTemplateLoader for Spring macros added to FreeMarker configuration
+17:42:19.672 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter --- Registering beans for JMX exposure on startup
+17:42:19.679 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter --- Bean with name 'duridDataSource' has been autodetected for JMX exposure
+17:42:19.688 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter --- Located MBean 'duridDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=duridDataSource,type=DruidDataSource]
+17:42:19.720 [main] INFO  o.a.coyote.http11.Http11NioProtocol --- Initializing ProtocolHandler ["http-nio-9001"]
+17:42:19.741 [main] INFO  o.a.coyote.http11.Http11NioProtocol --- Starting ProtocolHandler ["http-nio-9001"]
+17:42:19.760 [main] INFO  o.a.tomcat.util.net.NioSelectorPool --- Using a shared selector for servlet write/read
+17:42:19.831 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer --- Tomcat started on port(s): 9001 (http)
+17:42:19.840 [main] INFO  com.beyondsoft.itsm.ItsmApplication --- Started ItsmApplication in 13.802 seconds (JVM running for 14.856)
+17:43:49.515 [http-nio-9001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] --- Initializing Spring FrameworkServlet 'dispatcherServlet'
+17:43:49.516 [http-nio-9001-exec-1] INFO  o.s.web.servlet.DispatcherServlet --- FrameworkServlet 'dispatcherServlet': initialization started
+17:43:49.558 [http-nio-9001-exec-1] INFO  o.s.web.servlet.DispatcherServlet --- FrameworkServlet 'dispatcherServlet': initialization completed in 42 ms
+17:46:54.563 [main] INFO  com.beyondsoft.itsm.ItsmApplication [line:48] Starting ItsmApplication on DESKTOP-5B7O4K0 with PID 12856 (C:\springcloud-workspace\itsm\target\classes started by jeff in C:\springcloud-workspace\itsm)
+17:46:54.574 [main] INFO  com.beyondsoft.itsm.ItsmApplication [line:666] The following profiles are active: dev
+17:46:54.796 [main] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [line:583] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2b48a640: startup date [Wed Apr 03 17:46:54 CST 2019]; root of context hierarchy
+17:46:54.925 [background-preinit] INFO  org.hibernate.validator.internal.util.Version [line:30] HV000001: Hibernate Validator 5.2.5.Final
+17:46:56.848 [main] INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory [line:828] Overriding bean definition for bean 'userRespository' with a different definition: replacing [Generic bean: class [org.mybatis.spring.mapper.MapperFactoryBean]; scope=singleton; abstract=false; lazyInit=false; autowireMode=2; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\springcloud-workspace\itsm\target\classes\com\beyondsoft\itsm\modules\user\dao\UserRespository.class]] with [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+17:46:58.485 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [line:89] Tomcat initialized with port(s): 9001 (http)
+17:46:58.505 [main] INFO  org.apache.catalina.core.StandardService [line:179] Starting service [Tomcat]
+17:46:58.508 [main] INFO  org.apache.catalina.core.StandardEngine [line:179] Starting Servlet Engine: Apache Tomcat/8.5.15
+17:46:59.026 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner [line:179] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17:46:59.046 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [line:179] Initializing Spring embedded WebApplicationContext
+17:46:59.047 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader [line:276] Root WebApplicationContext: initialization completed in 4252 ms
+17:46:59.426 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean [line:190] Mapping servlet: 'dispatcherServlet' to [/]
+17:46:59.433 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean [line:258] Mapping filter: 'characterEncodingFilter' to: [/*]
+17:46:59.434 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean [line:258] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+17:46:59.435 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean [line:258] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+17:46:59.436 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean [line:258] Mapping filter: 'requestContextFilter' to: [/*]
+17:47:00.094 [main] INFO  com.alibaba.druid.pool.DruidDataSource [line:991] {dataSource-1} inited
+17:47:00.209 [main] INFO  org.springframework.jdbc.datasource.init.ScriptUtils [line:441] Executing SQL script from URL [file:/C:/springcloud-workspace/itsm/target/classes/schema.sql]
+17:47:00.220 [main] INFO  org.springframework.jdbc.datasource.init.ScriptUtils [line:507] Executed SQL script from URL [file:/C:/springcloud-workspace/itsm/target/classes/schema.sql] in 10 ms.
+17:47:00.224 [main] INFO  org.springframework.jdbc.datasource.init.ScriptUtils [line:441] Executing SQL script from URL [file:/C:/springcloud-workspace/itsm/target/classes/data.sql]
+17:47:00.291 [main] INFO  org.springframework.jdbc.datasource.init.ScriptUtils [line:507] Executed SQL script from URL [file:/C:/springcloud-workspace/itsm/target/classes/data.sql] in 67 ms.
+17:47:00.444 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [line:349] Building JPA container EntityManagerFactory for persistence unit 'default'
+17:47:00.481 [main] INFO  org.hibernate.jpa.internal.util.LogHelper [line:31] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+17:47:01.019 [main] INFO  org.hibernate.Version [line:37] HHH000412: Hibernate Core {5.0.12.Final}
+17:47:01.024 [main] INFO  org.hibernate.cfg.Environment [line:213] HHH000206: hibernate.properties not found
+17:47:01.028 [main] INFO  org.hibernate.cfg.Environment [line:317] HHH000021: Bytecode provider name : javassist
+17:47:01.158 [main] INFO  org.hibernate.annotations.common.Version [line:66] HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+17:47:01.488 [main] INFO  org.hibernate.dialect.Dialect [line:156] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+17:47:02.389 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [line:379] Initialized JPA EntityManagerFactory for persistence unit 'default'
+17:47:04.344 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [line:534] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2b48a640: startup date [Wed Apr 03 17:46:54 CST 2019]; root of context hierarchy
+17:47:04.521 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [line:543] Mapped "{[/user/list],methods=[GET]}" onto public com.beyondsoft.itsm.core.BaseOutDto<java.util.List<com.beyondsoft.itsm.modules.user.domain.User>> com.beyondsoft.itsm.modules.user.controller.UserController.list()
+17:47:04.523 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [line:543] Mapped "{[/user/save],methods=[GET]}" onto public com.beyondsoft.itsm.core.BaseOutDto com.beyondsoft.itsm.modules.user.controller.UserController.save(com.beyondsoft.itsm.modules.user.domain.User)
+17:47:04.524 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [line:543] Mapped "{[/user/{userId}],methods=[GET]}" onto public com.beyondsoft.itsm.modules.user.domain.User com.beyondsoft.itsm.modules.user.controller.UserController.findById(java.lang.Integer)
+17:47:04.524 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [line:543] Mapped "{[/user/userftlList],methods=[GET]}" onto public java.lang.String com.beyondsoft.itsm.modules.user.controller.UserController.ftlList(org.springframework.ui.ModelMap)
+17:47:04.525 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [line:543] Mapped "{[/user/userJspList],methods=[GET]}" onto public java.lang.String com.beyondsoft.itsm.modules.user.controller.UserController.jspList(org.springframework.ui.ModelMap)
+17:47:04.533 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [line:543] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+17:47:04.535 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [line:543] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+17:47:04.562 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [line:362] Mapped URL path [/index1] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+17:47:04.584 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [line:362] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:47:04.584 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [line:362] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:47:04.622 [main] INFO  o.s.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [line:273] Detected @ExceptionHandler methods in globalExceptionAdvice
+17:47:04.662 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [line:362] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:47:04.748 [main] INFO  o.s.boot.autoconfigure.web.WebMvcAutoConfiguration$WelcomePageHandlerMapping [line:512] Adding welcome page: class path resource [static/index.html]
+17:47:05.574 [main] INFO  org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer [line:127] ClassTemplateLoader for Spring macros added to FreeMarker configuration
+17:47:05.815 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter [line:431] Registering beans for JMX exposure on startup
+17:47:05.817 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter [line:916] Bean with name 'duridDataSource' has been autodetected for JMX exposure
+17:47:05.825 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter [line:671] Located MBean 'duridDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=duridDataSource,type=DruidDataSource]
+17:47:05.893 [main] INFO  org.apache.coyote.http11.Http11NioProtocol [line:179] Initializing ProtocolHandler ["http-nio-9001"]
+17:47:05.937 [main] INFO  org.apache.coyote.http11.Http11NioProtocol [line:179] Starting ProtocolHandler ["http-nio-9001"]
+17:47:05.966 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool [line:179] Using a shared selector for servlet write/read
+17:47:06.022 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [line:198] Tomcat started on port(s): 9001 (http)
+17:47:06.031 [main] INFO  com.beyondsoft.itsm.ItsmApplication [line:57] Started ItsmApplication in 12.604 seconds (JVM running for 13.532)

@@ -1,0 +1,36 @@
+server:
+  port: 9001
+
+#druid连接池配置
+druid:
+  url: jdbc:h2:tcp://localhost:9092/~/test  username: sa
+  password: 123456
+  max-active: 50 #最大连接池数量
+  min-idle: 5    #最小连接池数量 
+  maxWait: 10000   #获取连接等待超时的时间
+  pool-prepared-statements: true  #是否缓存preparedStatement.对支持游标的数据库性能提升巨大
+  max-pool-prepared-statement-per-connection-size: 30
+  min-evictable-idle-time-millis: 300000  #一个连接在池中最小生存的时间
+  test-on-borrow: true
+  test-on-return: false
+  validationQuery: select 1
+  testWhileIdle: true
+  time-between-eviction-runs-millis: 60000
+  monitor: true
+  
+
+#mybatis配置
+mybatis:  mapper-locations: classpath:com/beyondsoft/itsm/modules/**/*Mapper.xml
+  type-aliases-package: com.beyondsoft.itsm.domain
+spring:  jpa:    database-platform: H2
+    hibernate:      ddl-auto: none
+    show-sql: true#  profiles:#    active: dev
+  mvc:    view:      prefix: /WEB-INF/jsp/
+      suffix: .jsp  freemarker:    prefix: /ftl/
+    suffix: .ftl
+    settings:
+      classic_compatible: true   #freemark碰到null时返回一个空白字符串
+#logging:#  level:
+#    org.springframework.web: debug#    org.springframework.jdbc: debug
+#    org.springframework.transaction: debug
+       

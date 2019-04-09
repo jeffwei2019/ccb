@@ -1,0 +1,9 @@
+17:17:10.532 [main] ERROR c.alibaba.druid.pool.DruidDataSource --- testWhileIdle is true, validationQuery not set
+17:27:29.407 [main] ERROR c.alibaba.druid.pool.DruidDataSource --- testWhileIdle is true, validationQuery not set
+17:27:53.537 [http-nio-9001-exec-4] ERROR c.b.i.m.u.controller.UserController --- ---error----
+17:28:04.433 [http-nio-9001-exec-7] ERROR c.b.i.m.u.controller.UserController --- ---error----
+17:28:33.939 [main] ERROR c.alibaba.druid.pool.DruidDataSource --- testWhileIdle is true, validationQuery not set
+17:29:29.628 [http-nio-9001-exec-1] ERROR c.b.i.m.u.controller.UserController --- ---error----
+17:39:51.346 [main] ERROR c.alibaba.druid.pool.DruidDataSource --- testWhileIdle is true, validationQuery not set
+17:42:14.288 [main] ERROR c.alibaba.druid.pool.DruidDataSource --- testWhileIdle is true, validationQuery not set
+17:47:00.025 [main] ERROR com.alibaba.druid.pool.DruidDataSource [line:1137] testWhileIdle is true, validationQuery not set

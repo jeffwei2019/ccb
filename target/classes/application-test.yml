@@ -1,0 +1,8 @@
+#druid连接池配置
+druid:
+  url: jdbc:sqlserver://localhost:1433;DatabaseName=student  username: sa
+  password: 123456
+  max-active: 100 #最大连接池数量
+  min-idle: 10    #最小连接池数量
+  testWhileIdle: true
+       

@@ -1,0 +1,13 @@
+#druid连接池配置
+druid:
+  url: jdbc:h2:tcp://localhost:9092/~/test  username: sa
+  password: 123456
+  max-active: 100 #最大连接池数量
+  min-idle: 10    #最小连接池数量
+  pool-prepared-statements: true  #是否缓存preparedStatement.对支持游标的数据库性能提升巨大
+  max-open-prepared-statements: 30
+  validationQuery: select 1
+  testWhileIdle: true
+  time-between-eviction-runs-millis: 60000
+  monitor: true
+  
