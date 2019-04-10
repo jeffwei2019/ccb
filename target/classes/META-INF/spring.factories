@@ -1,6 +1,0 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-com.beyondsoft.itsm.core.autoconfig.DruidAutoConfiguration,\
-com.beyondsoft.itsm.core.autoconfig.CxfAutoConfiguration
-
-
-
