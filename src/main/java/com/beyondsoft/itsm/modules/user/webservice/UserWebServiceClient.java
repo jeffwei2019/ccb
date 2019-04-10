@@ -32,12 +32,12 @@ public class UserWebServiceClient extends AbstractCxfWebService<IUserService> {
 		return iUserService.findById(userId);
 	}
 
-	public static void main(String[] args) {
-		String url = "http://127.0.0.1:9001/service/user?wsdl";
-		User user = UserWebServiceClient.getInstance(url).getUser(1);
-		System.out.println(user);
-		User user1 = UserWebServiceClient.getInstance(url).getUser(1);
-		System.out.println(user1);
-	}
+	/*
+	 * public static void main(String[] args) { String url =
+	 * "http://127.0.0.1:9001/service/user?wsdl"; User user =
+	 * UserWebServiceClient.getInstance(url).getUser(1); System.out.println(user);
+	 * User user1 = UserWebServiceClient.getInstance(url).getUser(1);
+	 * System.out.println(user1); }
+	 */
 
 }

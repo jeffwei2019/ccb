@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.beyondsoft.itsm.core.BaseOutDto;
+import com.beyondsoft.itsm.core.utils.CaWebServiceUtil;
 import com.beyondsoft.itsm.modules.user.domain.User;
 import com.beyondsoft.itsm.modules.user.service.IUserService;
 import com.github.pagehelper.Page;
@@ -25,6 +26,14 @@ public class UserController {
 	
 	@Autowired
 	private IUserService userService;
+	
+	@RequestMapping(path = "/testCa", method = RequestMethod.GET)
+	@ResponseBody
+	public BaseOutDto testCa() {
+		CaWebServiceUtil.getInstance().login();
+		return BaseOutDto.success();
+	}
+	
 
 	@RequestMapping(path = "/{userId}", method = RequestMethod.GET)
 	@ResponseBody

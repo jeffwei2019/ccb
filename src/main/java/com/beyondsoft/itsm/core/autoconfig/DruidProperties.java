@@ -1,7 +1,6 @@
 package com.beyondsoft.itsm.core.autoconfig;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.stereotype.Component;
 
 @ConfigurationProperties(prefix = "druid")
 public class DruidProperties {
