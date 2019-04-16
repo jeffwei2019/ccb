@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.context.request.WebRequest;
 
-import com.beyondsoft.itsm.core.BaseOutDto;
+import com.beyondsoft.itsm.core.BaseOutVO;
 import com.beyondsoft.itsm.core.exception.BussinessException;
 import com.beyondsoft.itsm.core.exception.ResponseStatus;
 
@@ -23,15 +23,15 @@ public class GlobalExceptionAdvice {
 
 	@ExceptionHandler
 	@ResponseBody
-	public BaseOutDto exception(Exception exception, WebRequest request) {
+	public BaseOutVO exception(Exception exception, WebRequest request) {
 		logger.error(exception.getMessage());
-		BaseOutDto baseOutDto;
+		BaseOutVO baseOutVO;
 		if (exception instanceof BussinessException) {
 			BussinessException bussinessException = (BussinessException) exception;
-			baseOutDto = BaseOutDto.fail(bussinessException.getErrorCode(), bussinessException.getMessage());
+			baseOutVO = BaseOutVO.fail(bussinessException.getErrorCode(), bussinessException.getMessage());
 		} else {
-			baseOutDto = BaseOutDto.fail(ResponseStatus.ERROR.getCode(), exception.getMessage());
+			baseOutVO = BaseOutVO.fail(ResponseStatus.ERROR.getCode(), exception.getMessage());
 		}
-		return baseOutDto;
+		return baseOutVO;
 	}
 }

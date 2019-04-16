@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.beyondsoft.itsm.core.BaseOutDto;
+import com.beyondsoft.itsm.core.BaseOutVO;
 import com.beyondsoft.itsm.core.utils.CaWebServiceUtil;
 import com.beyondsoft.itsm.modules.user.domain.User;
 import com.beyondsoft.itsm.modules.user.service.IUserService;
@@ -26,14 +26,6 @@ public class UserController {
 	
 	@Autowired
 	private IUserService userService;
-	
-	@RequestMapping(path = "/testCa", method = RequestMethod.GET)
-	@ResponseBody
-	public BaseOutDto testCa() {
-		CaWebServiceUtil.getInstance().login();
-		return BaseOutDto.success();
-	}
-	
 
 	@RequestMapping(path = "/{userId}", method = RequestMethod.GET)
 	@ResponseBody
@@ -43,9 +35,9 @@ public class UserController {
 
 	@RequestMapping(path = "/list", method = RequestMethod.GET)
 	@ResponseBody
-	public BaseOutDto<List<User>> list(int currentPage,int pageSize) {
+	public BaseOutVO<List<User>> list(int currentPage,int pageSize) {
 		Page page = PageHelper.startPage(currentPage, pageSize);
-		return BaseOutDto.success(userService.list());
+		return BaseOutVO.success(userService.list());
 	}
 
 	@RequestMapping(path = "/userftlList", method = RequestMethod.GET)
@@ -64,8 +56,8 @@ public class UserController {
 
 	@RequestMapping(path = "/save", method = RequestMethod.GET)
 	@ResponseBody
-	public BaseOutDto save(User user) {
+	public BaseOutVO save(User user) {
 		userService.save(user);
-		return BaseOutDto.success();
+		return BaseOutVO.success();
 	}
 }

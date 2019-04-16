@@ -9,11 +9,6 @@ import com.beyondsoft.itsm.core.annotation.ItsmSpringBootApplication;
 
 @ItsmSpringBootApplication
 public class ItsmApplication extends SpringBootServletInitializer {
-	@Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        return application.sources(ItsmApplication.class);
-    }
-	
 	public static void main(String[] args) {
 		SpringApplication.run(ItsmApplication.class, args);
 	}

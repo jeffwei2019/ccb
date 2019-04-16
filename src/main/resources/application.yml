@@ -17,11 +17,13 @@ druid:
   testWhileIdle: true
   time-between-eviction-runs-millis: 60000
   monitor: true
+  enabled: false
   
 
 #mybatis配置
 mybatis:  mapper-locations: classpath:com/beyondsoft/itsm/modules/**/*Mapper.xml
   type-aliases-package: com.beyondsoft.itsm.domain
+ 
 spring:  jpa:    database-platform: H2
     hibernate:      ddl-auto: none
     show-sql: true#  profiles:#    active: dev
@@ -30,11 +32,8 @@ spring:  jpa:    database-platform: H2
     suffix: .ftl
     settings:
       classic_compatible: true   #freemark碰到null时返回一个空白字符串
-#logging:#  level:
-#    org.springframework.web: debug#    org.springframework.jdbc: debug
-#    org.springframework.transaction: debug
 ca:
-  url: http://www.baidu.com
-  username: sa
-  password: 123
+  url: http://128.192.136.137:18080/axis/services/USD_WebServiceSoap?wsdl
+  username: houyue.zh
+  password: ""
        

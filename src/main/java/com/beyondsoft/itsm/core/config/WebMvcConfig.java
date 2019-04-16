@@ -17,6 +17,9 @@ import com.beyondsoft.itsm.core.interceptor.WebAccessLogInterceptor;
 @Configuration
 public class WebMvcConfig extends WebMvcConfigurerAdapter {
 
+	/**
+	 *   拦截器
+	 */
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
 		registry.addInterceptor(webAccessLogInterceptor());
@@ -27,12 +30,17 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
 		registry.addViewController("/index1").setViewName("/index1");
 	}
 
+	
 	@Override
 	public void configurePathMatch(PathMatchConfigurer configurer) {
 		// 路径参数如果带”.”的话，”.”后面的值将被忽略 eg:/anno/pathvar/xx.yy
 		configurer.setUseSuffixPatternMatch(false);
 	}
 
+	/**
+	 * web访问拦截器
+	 * @return
+	 */
 	@Bean
 	public WebAccessLogInterceptor webAccessLogInterceptor() {
 		return new WebAccessLogInterceptor();

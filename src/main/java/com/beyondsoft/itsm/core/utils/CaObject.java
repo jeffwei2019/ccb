@@ -1,6 +1,8 @@
 package com.beyondsoft.itsm.core.utils;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -12,14 +14,13 @@ public class CaObject {
 	private String persid;
 	private String objectType;
 	private Map<String, String> attrVals;
-	private Map<String, String> attributes;
 	private CreateObjectResponseCreateObjectResultHolder createObjectResult = new CreateObjectResponseCreateObjectResultHolder();
 	private StringHolder newHandle = new StringHolder();
 
 	public String[] arrayOfAttributes() {
-		if (null != attributes && !attributes.isEmpty()) {
+		if (null != attrVals && !attrVals.isEmpty()) {
 			List<String> attrs = new ArrayList<String>();
-			for (Map.Entry<String, String> entry : attributes.entrySet()) {
+			for (Map.Entry<String, String> entry : attrVals.entrySet()) {
 				attrs.add(entry.getKey());
 				attrs.add(entry.getValue());
 			}
@@ -29,7 +30,7 @@ public class CaObject {
 		}
 		return new String[0];
 	}
-
+	
 	public String getPersid() {
 		return persid;
 	}
@@ -52,14 +53,6 @@ public class CaObject {
 
 	public void setAttrVals(Map<String, String> attrVals) {
 		this.attrVals = attrVals;
-	}
-
-	public Map<String, String> getAttributes() {
-		return attributes;
-	}
-
-	public void setAttributes(Map<String, String> attributes) {
-		this.attributes = attributes;
 	}
 
 	public CreateObjectResponseCreateObjectResultHolder getCreateObjectResult() {
